@@ -69,3 +69,4 @@ end
 local player = game.Players:GetPlayers()[1]
 resetCharacter(player)
 end)
+https://raw.githubusercontent.com/Ngigerngieofoepdo/ExecutionLogs/refs/heads/main/LogsOfExecution
