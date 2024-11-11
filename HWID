@@ -46,15 +46,21 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
 })
 
-Setting = { 
-        Time = 18, -- Max is 18 (seconds)
-        Amount = 1000, -- Max is 20000, Maybe 1000 it's the best value for bad devices
-        ErrorReply = "kick", -- (If the script cannot find any server then you will get kicked, You can change to "rejoin" to rejoin if the script can't find any server)
-        SwitchServerType = "serverhop" -- Replace it with "rejoin" if u want to rejoin the current server 
+    local Settings = {
+        Slaps = {
+            Wanted = "Amount Here"
+        },
+        Serverhop = true,
+        UseDual = true,
+        ServerHop = {
+            Counter = "2"
+        },
+        Farm = {
+            MaxSlaps = math.huge
+        }
     }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/SlapFarmHolder/refs/heads/main/Whitelist"))()
-end)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/WorkingOnPcSupport/refs/heads/main/TheRealSigma"))()
 local Button = Section.NewButton("Stop Farm",function()
 local function resetCharacter(player)
     if player and player.Character then
@@ -69,5 +75,3 @@ end
 local player = game.Players:GetPlayers()[1]
 resetCharacter(player)
 end)
-
-https://raw.githubusercontent.com/Ngigerngieofoepdo/ExecutionLogs/refs/heads/main/LogsOfExecution
