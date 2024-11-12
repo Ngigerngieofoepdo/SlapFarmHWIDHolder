@@ -45,7 +45,6 @@ game.StarterGui:SetCore("SendNotification",  {
  Button1 = "W";
  Callback = NotificationBindable;
 })
-
     local Settings = {
         Slaps = {
             Wanted = "Amount Here"
@@ -59,7 +58,6 @@ game.StarterGui:SetCore("SendNotification",  {
             MaxSlaps = math.huge
         }
     }
-
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/WorkingOnPcSupport/refs/heads/main/TheRealSigma"))()
 local Button = Section.NewButton("Stop Farm",function()
 local function resetCharacter(player)
