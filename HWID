@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
-Window = Library.Main("Gato's Slap Farm Paid","LeftShift") -- change "LeftAlt" to key that you want will hide gui
+Window = Library.Main("Gato's Slap Farm","LeftShift") -- change "LeftAlt" to key that you want will hide gui
 
 -- tab
 
@@ -45,7 +45,8 @@ game.StarterGui:SetCore("SendNotification",  {
  Button1 = "W";
  Callback = NotificationBindable;
 })
-    local Settings = {
+
+local Settings = {
     Slaps = {
         Wanted = "1000"
     },
@@ -60,17 +61,4 @@ game.StarterGui:SetCore("SendNotification",  {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/WorkingOnPcSupport/refs/heads/main/TheJellyEhInsanelySmelly"))()
-local Button = Section.NewButton("Stop Farm",function()
-local function resetCharacter(player)
-    if player and player.Character then
-        player.Character:Destroy()
-        player:LoadCharacter()
-        print("Player " .. player.Name .. "'s character has been reset.")
-    else
-        warn("Player or player's character not found.")
-    end
-end
-
-local player = game.Players:GetPlayers()[1]
-resetCharacter(player)
 end)
