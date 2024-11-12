@@ -45,7 +45,21 @@ game.StarterGui:SetCore("SendNotification",  {
  Button1 = "W";
  Callback = NotificationBindable;
 })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/SlapFarmGUIHolder/refs/heads/main/Holder"))()
+    local Settings = {
+    Slaps = {
+        Wanted = "1000"
+    },
+    Serverhop = true,
+    UseDual = true,
+    ServerHop = {
+        Counter = "5"
+    },
+    Farm = {
+        MaxSlaps = 0 -- The amount of slaps to stop on
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/WorkingOnPcSupport/refs/heads/main/TheJellyEhInsanelySmelly"))()
 local Button = Section.NewButton("Stop Farm",function()
 local function resetCharacter(player)
     if player and player.Character then
