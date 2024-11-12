@@ -47,7 +47,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
     local Settings = {
         Slaps = {
-            Wanted = "Amount Here"
+            Wanted = "1000"
         },
         Serverhop = true,
         UseDual = true,
@@ -55,7 +55,7 @@ game.StarterGui:SetCore("SendNotification",  {
             Counter = "2"
         },
         Farm = {
-            MaxSlaps = math.huge
+            MaxSlaps = 0
         }
     }
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/WorkingOnPcSupport/refs/heads/main/TheRealSigma"))()
